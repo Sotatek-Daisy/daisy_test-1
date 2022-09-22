@@ -1,24 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+import ControllerBar from "./component/ControllerBar";
+import TableBoxes from "./component/TableBoxes";
+import Test2 from "./component/Test2";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="App-container test1">
+        <h3>Test 1: Create list boxes</h3>
+        <ControllerBar />
+        <TableBoxes />
+      </div>
+      <div className="App-container test2">
+        <h3>Test 2: Find that value of the path that has the most value</h3>
+        <Test2 />
+      </div>
     </div>
   );
 }

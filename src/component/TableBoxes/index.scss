@@ -1,0 +1,27 @@
+.boxes {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.single-box {
+  border: 1px solid;
+  flex: 1;
+  &_bar {
+    display: flex;
+    border-bottom: 1px solid;
+    gap: 10px;
+    padding: 10px;
+    justify-content: space-between;
+    &.element {
+      border: none;
+    }
+    &--label {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  &_element {
+    min-height: 40px;
+  }
+}
